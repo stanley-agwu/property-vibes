@@ -1,6 +1,8 @@
 import type { Metadata } from 'next';
 import localFont from 'next/font/local';
 
+import Navbar from '@/components/Navbar';
+
 import './globals.css';
 
 const geistSans = localFont({
@@ -16,6 +18,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: 'Property Vibes',
+  keywords: 'rental, property, real estate',
   description:
     'Property Vibes offers a premier selection of rental properties where comfort and style converge to create your perfect living experience. Each property is thoughtfully designed to blend modern amenities with timeless charm, providing a seamless balance between convenience and comfort.',
 };
@@ -27,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
