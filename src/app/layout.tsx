@@ -15,9 +15,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'The Serene Oasis Resort',
+  title: 'Property Vibes',
   description:
-    'The Serene Oasis Resort is a luxurious retreat nestled in the heart of nature, where wild elegance meets modern comfort. Every moment is a perfect blend of wilderness and luxury, offering an unforgettable escape into nature’s beauty.',
+    'Property Vibes offers a premier selection of rental properties where comfort and style converge to create your perfect living experience. Each property is thoughtfully designed to blend modern amenities with timeless charm, providing a seamless balance between convenience and comfort.',
 };
 
 export default function RootLayout({
